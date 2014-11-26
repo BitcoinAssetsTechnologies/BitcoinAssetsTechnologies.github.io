@@ -35,3 +35,11 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+$(document).ready(function () {
+    $("#portfolio a[title].tooltip-info").each(function () {
+        $(this).attr("title-tooltip", $(this).attr("title"));
+        $(this).removeAttr("title");
+
+    })
+})
