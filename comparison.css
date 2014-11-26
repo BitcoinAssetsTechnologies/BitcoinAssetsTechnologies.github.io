@@ -140,7 +140,9 @@ div.tsc_pt3_style1 div.column_3 li.header_row_2 { border-top: 1px solid #2972b0;
 div.tsc_pt3_style1 div.column_4 li.header_row_1 { border-top: 0; border-bottom: 1px solid #1a3e7b; background-color: #1a3e7b; }
 div.tsc_pt3_style1 div.column_4 li.header_row_2 { border-top: 1px solid #234e8e; border-bottom: 1px solid #234e8e; background-color: #234e8e; }
 
-	
+div.tsc_pt3_style1 li.header_row_2 a { border-bottom: none; }
+div.tsc_pt3_style1 li.header_row_2 a:hover { border-bottom: none; }
+
 a {
 	font-family:Calibri, Arial;
 	/*font-size:13px;*/
