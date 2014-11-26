@@ -40,6 +40,11 @@ $(document).ready(function () {
     $("#portfolio a[title].tooltip-info").each(function () {
         $(this).attr("title-tooltip", $(this).attr("title"));
         $(this).removeAttr("title");
-
     })
+
+    $("#portfolio a.tooltip-info").click(function (e) {
+        if ($(this).attr("href") == "#") {
+            e.preventDefault();
+        }
+    });
 })
