@@ -78,300 +78,358 @@
             <div class="row">
               <div class="col-md-12">
 
+                <table class="comparison-table">
+                  <tr class="top-header">
+                    <th class="col1"></th>
+                    <td class="col2"><h2>Coinprism</h2> <div><a href="https://www.coinprism.com"><img src="coinprism.png" alt="Coinprism" /></a></div></td>
+                    <td class="col3"><h2>Counterparty</h2><div><a href="http://counterparty.io/"><img src="counterparty.png" alt="Counterparty" /></a></div></td>
+                    <td class="col4"><h2>Mastercoin</h2><div><a href="http://www.mastercoin.org/"><img src="mastercoin.png" alt="Mastercoin" /></a></div></td>
+                  </tr>
 
-                <div class="tsc_pricingtable03 tsc_pt3_style1">
-                  <div class="caption_column">
-                    <ul>
-                      <li class="header_row_1 align_center radius5_topleft"></li>
-                      <li class="header_row_2">
-                      </li>
-                      <li class="group_header"><span><strong>Protocol Characteristics</strong></span></li>
-                      <li class="row_style_2"><span>Protocol name</span></li>
-                      <li class="row_style_2"><span>Family</span></li>
-                      <li class="row_style_2"><span>Architecture</span></li>
-                      <li class="row_style_2"><span>Uses the Bitcoin blockchain</span></li>
-                      <li class="row_style_2"><span>Uses no intermediate currency</span></li>
-                      <li class="row_style_2"><span>Open Source</span></li>
-                      <li class="row_style_2"><span>Protocol specification document</span></li>
-                      <li class="row_style_2"><span>Length of specification</span></li>
-                      <li class="row_style_2"><span>Protocol state</span></li>
-                      <li class="row_style_2"><span>Reference implementation</span></li>
-                      <li class="row_style_2"><span>Test coverage</span></li>
-                      <li class="row_style_2"><span>Lines of consensus critical code</span></li>
-                      <li class="row_style_2"><span>Number of independant implementations</span></li>
-                      <li class="row_style_2"><span>Uses provably pruneable outputs</span></li>
-                      <li class="row_style_2"><span>Prevents asset loss</span></li>
+                  <tr class="group">
+                    <th colspan="4"><div>Protocol Characteristics</div></th>
+                  </tr>
+                  <tr>
+                    <th><div>Protocol name</div></th>
+                    <td><a href="https://github.com/OpenAssets/open-assets-protocol/blob/master/specification.mediawiki">Open Assets</a></td>
+                    <td><a href="https://github.com/CounterpartyXCP/counterpartyd">Counterparty Protocol</a></td>
+                    <td><a href="https://github.com/mastercoin-MSC/spec">Master Protocol</a></td>
+                  </tr>
+                  <tr>
+                    <th><div>Family</div></th>
+                    <td>Colored coins</td>
+                    <td>Global state consensus</td>
+                    <td>Global state consensus</td>
+                  </tr>
+                  <tr>
+                    <th><div>Architecture</div></th>
+                    <td><a href="#" class="tooltip-info" title="Additional features are implemented as external apps">Modular</a></td>
+                    <td><a href="#" class="tooltip-info" title="Additional features require modification of the protocol">Monolithic</a></td>
+                    <td><a href="#" class="tooltip-info" title="Additional features require modification of the protocol">Monolithic</a></td>
+                  </tr>
+                  <tr>
+                    <th><div>Uses the Bitcoin blockchain</div></th>
+                    <td><span class="yes"></span></td>
+                    <td><span class="yes"></span></td>
+                    <td><span class="yes"></span></td>
+                  </tr>
+                  <tr>
+                    <th><div>Uses no intermediate currency</div></th>
+                    <td><span class="yes"></span></td>
+                    <td><a href="#" class="tooltip-info" title="Relies on the XCP currency for some features"><span class="no"></span></a></td>
+                    <td><a href="#" class="tooltip-info" title="Relies on the MSC currency for some features"><span class="no"></span></a></td>
+                  </tr>
+                  <tr>
+                    <th><div>Open Source</div></th>
+                    <td><span class="yes"></span></td>
+                    <td><span class="yes"></span></td>
+                    <td><span class="yes"></span></td>
+                  </tr>
+                  <tr>
+                    <th><div>Protocol specification document</div></th>
+                    <td><span class="yes"></span></td>
+                    <td><span class="no"></span></td>
+                    <td><span class="yes"></span></td>
+                  </tr>
+                  <tr>
+                    <th><div>Length of specification</div></th>
+                    <td><a href="https://github.com/OpenAssets/open-assets-protocol/blob/master/specification.mediawiki">6 pages</a></td>
+                    <td>Does not exist</td>
+                    <td><a href="https://github.com/mastercoin-MSC/spec">45 pages</a></td>
+                  </tr>
+                  <tr>
+                    <th><div>Protocol state</div></th>
+                    <td>Final</td>
+                    <td>Subject to regular changes</td>
+                    <td>Subject to regular changes</td>
+                  </tr>
+                  <tr>
+                    <th><div>Reference implementation</div></th>
+                    <td><a href="https://github.com/OpenAssets/openassets">Openassets python module</a></td>
+                    <td><a href="https://github.com/CounterpartyXCP/counterpartyd">Counterpartyd</a></td>
+                    <td><a href="https://github.com/mastercoin-MSC/mastercore">mastercore</a> (beta)</span></td>
+                  </tr>
+                  <tr>
+                    <th><div>Test coverage</div></th>
+                    <td>99%</td>
+                    <td>54%</td>
+                    <td>n/a</td>
+                  </tr>
+                  <tr>
+                    <th><div>Lines of consensus critical code</div></th>
+                    <td>529</td>
+                    <td>8,744</td>
+                    <td>Unknown (fork of Bitcoind)</td>
+                  </tr>
+                  <tr>
+                    <th><div>Number of independant implementations</div></th>
+                    <td><a href="#" class="tooltip-info" title="Colorcore, NBitcoin and Assembly.com">3</a></td>
+                    <td>1</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <th><div>Uses provably pruneable outputs</div></th>
+                    <td><a href="#" class="tooltip-info" title="Uses OP_RETURN as protocol is compact"><span class="yes"></span></a></td>
+                    <td><a href="#" class="tooltip-info" title="Uses bare multisig outputs"><span class="no"></span></a></td>
+                    <td><a href="#" class="tooltip-info" title="Uses bare multisig outputs"><span class="no"></span></a></td>
+                  </tr>
+                  <tr>
+                    <th><div>Prevents asset loss</div></th>
+                    <td><a href="#" class="tooltip-info" title="Uses a different address format for sending assets"><span class="yes"></span></a></td>
+                    <td><a href="#" class="tooltip-info" title="Assets can be sent to Coinbase, Bitstamp, or any exchange, resulting in the loss of the assets"><span class="no"></span></a></td>
+                    <td><a href="#" class="tooltip-info" title="Assets can be sent to Coinbase, Bitstamp, or any exchange, resulting in the loss of the assets"><span class="no"></span></a></td>
+                  </tr>
 
-                      <li class="group_header"><span><strong>Protocol Features</strong></span></li>
-                      <li class="row_style_2"><span>Atomic Bitcoin - Asset swap</span></li>
-                      <li class="row_style_2"><span>Atomic Asset - Asset swap</span></li>
-                      <li class="row_style_2"><span>Send multiple assets in single transaction</span></li>
-                      <li class="row_style_2"><span>Send assets to multiple recipients</span></li>
-                      <li class="row_style_2"><span>Asset divisibility</span></li>
-                      <li class="row_style_2"><span><a href="#" class="tooltip-info" title="Assuming no double spend from participants">Tolerant to Blockchain reorganizations</a></span></li>
-                      <li class="row_style_2"><span>Prevents asset name squatting</span></li>
-                      <li class="row_style_2"><span><a href="http://blog.coinprism.com/2014/09/10/proof-of-authenticity-of-cryptoassets/" class="tooltip-info" title="Allow the issuer to cryptographically prove its identity">Proof of authenticity</a></span></li>
-                      <li class="row_style_2"><span>Asset creation cost</span></li>
-                      <li class="row_style_2"><span>Asset transfer cost</span></li>
-                      <li class="row_style_2"><span>Associate contract with asset</span></li>
-                      <li class="row_style_2"><span>Asset icon</span></li>
-                      <li class="row_style_2"><span>Dividends</span></li>
-                      <li class="row_style_2"><span>Voting</span></li>
-                      <li class="row_style_2"><span>Locked assets</span></li>
-                      <li class="row_style_2"><span>Callable assets</span></li>
-                      <li class="row_style_2"><span>Compatible with decentralized exchange</span></li>
-                      <li class="row_style_2"><span>Operational decentralized exchange</span></li>
-                      <li class="row_style_2"><span>Compatible with micropayment channels</span></li>
-                      <li class="row_style_2"><span>SPV</span></li>
-                      <li class="row_style_2"><span>Support for unconfirmed transactions</span></li>
-                      <li class="row_style_2"><span>Other non asset related features</span></li>
+                  <tr class="group">
+                    <th colspan="4"><div>Protocol Features</div></th>
+                  </tr>
+                  <tr>
+                    <th><div>Atomic Bitcoin - Asset swap</div></th>
+                    <td><span class="yes"></span></td>
+                    <td><span class="no"></span></td>
+                    <td><span class="no"></span></td>
+                  </tr>
+                  <tr>
+                    <th><div>Atomic Asset - Asset swap</div></th>
+                    <td><span class="yes"></span></td>
+                    <td><span class="no"></span></td>
+                    <td><span class="no"></span></td>
+                  </tr>
+                  <tr>
+                    <th><div>Send multiple assets in single transaction</div></th>
+                    <td><span class="yes"></span></td>
+                    <td><span class="no"></span></td>
+                    <td><span class="no"></span></td>
+                  </tr>
+                  <tr>
+                    <th><div>Send assets to multiple recipients</div></th>
+                    <td><span class="yes"></span></td>
+                    <td><span class="no"></span></td>
+                    <td><span class="no"></span></td>
+                  </tr>
+                  <tr>
+                    <th><div>Asset divisibility</div></th>
+                    <td>Any from 0 to 18 places</td>
+                    <td>Either 0 or 8 places</td>
+                    <td>Either 0 or 8 places</td>
+                  </tr>
+                  <tr>
+                    <th><div><a href="#" class="tooltip-info" title="Assuming no double spend from participants">Tolerant to Blockchain reorganizations</a></div></th>
+                    <td><span class="yes"></span></td>
+                    <td><a href="#" class="tooltip-info" title="Transactions may be lost as a result of a Blockchain reorganization"><span class="no"></span></a></td>
+                    <td><a href="#" class="tooltip-info" title="Transactions may be lost as a result of a Blockchain reorganization"><span class="no"></span></a></td>
+                  </tr>
+                  <tr>
+                    <th><div>Prevents asset name squatting</div></th>
+                    <td><a href="#" class="tooltip-info" title="Asset names do not have to be unique, but can be verified"><span class="yes"></span></a></td>
+                    <td><span class="no"></span></td>
+                    <td><span class="no"></span></td>
+                  </tr>
+                  <tr>
+                    <th><div><a href="http://blog.coinprism.com/2014/09/10/proof-of-authenticity-of-cryptoassets/" class="tooltip-info" title="Allow the issuer to cryptographically prove its identity">Proof of authenticity</a></div></th>
+                    <td><span class="yes"></span></td>
+                    <td><span class="no"></span></td>
+                    <td><span class="no"></span></td>
+                  </tr>
+                  <tr>
+                    <th><div>Asset creation cost</div></th>
+                    <td>Bitcoin fees</td>
+                    <td>Bitcoin fees + 0.5 XCP</td>
+                    <td>Bitcoin fees</td>
+                  </tr>
+                  <tr>
+                    <th><div>Asset transfer cost</div></th>
+                    <td>Bitcoin fees</td>
+                    <td>Bitcoin fees</td>
+                    <td>Bitcoin fees</td>
+                  </tr>
+                  <tr>
+                    <th><div>Associate contract with asset</div></th>
+                    <td><a href="#" class="tooltip-info" title="Unlimited length"><span class="yes"></span></a></td>
+                    <td><span class="no"></span></td>
+                    <td><span class="no"></span></td>
+                  </tr>
+                  <tr>
+                    <th><div>Asset icon</div></th>
+                    <td><span class="yes"></span></td>
+                    <td><span class="no"></span></td>
+                    <td><span class="no"></span></td>
+                  </tr>
+                  <tr>
+                    <th><div>Dividends</div></th>
+                    <td><span class="yes"></span></td>
+                    <td><span class="yes"></span></td>
+                    <td><span class="yes"></span></td>
+                  </tr>
+                  <tr>
+                    <th><div>Voting</div></th>
+                    <td><span class="yes"></span></td>
+                    <td><span class="yes"></span></td>
+                    <td><span class="no"></span></td>
+                  </tr>
+                  <tr>
+                    <th><div>Locked assets</div></th>
+                    <td><a href="#" class="tooltip-info" title="Via destruction of private key"><span class="yes"></span></a></td>
+                    <td><span class="yes"></span></td>
+                    <td><a href="#" class="tooltip-info" title="Via destruction of private key"><span class="yes"></span></a></td>
+                  </tr>
+                  <tr>
+                    <th><div>Callable assets</div></th>
+                    <td><a href="#" class="tooltip-info" title="Via dividends and asset repudiation"><span class="yes"></span></a></td>
+                    <td><span class="yes"></span></td>
+                    <td><span class="no"></span></td>
+                  </tr>
+                  <tr>
+                    <th><div>Compatible with decentralized exchange</div></th>
+                    <td><a href="#" class="tooltip-info" title="Supports multiple implementations"><span class="yes"></span></a></td>
+                    <td><span class="yes"></span></td>
+                    <td><span class="yes"></span></td>
+                  </tr>
+                  <tr>
+                    <th><div>Operational decentralized exchange</div></th>
+                    <td><span class="no"></span></td>
+                    <td><a href="#" class="tooltip-info" title="Placing orders requires paying a transaction fee and waiting 10 minutes confirmation time"><span class="yes"></span></a></td>
+                    <td><a href="#" class="tooltip-info" title="Asset to asset exchange not supported - placing orders requires paying a transaction fee and waiting 10 minutes confirmation time"><span class="yes"></span></a></td>
+                  </tr>
+                  <tr>
+                    <th><div>Compatible with micropayment channels</div></th>
+                    <td><span class="yes"></span></td>
+                    <td><span class="no"></span></td>
+                    <td><span class="no"></span></td>
+                  </tr>
+                  <tr>
+                    <th><div>SPV</div></th>
+                    <td><span class="yes"></span></td>
+                    <td><span class="no"></span></td>
+                    <td><span class="no"></span></td>
+                  </tr>
+                  <tr>
+                    <th><div>Support for unconfirmed transactions</div></th>
+                    <td><span class="yes"></span></td>
+                    <td><a href="#" class="tooltip-info" title="The order of confirmation might affect transaction validity"><span class="no"></span></a></td>
+                    <td><a href="#" class="tooltip-info" title="The order of confirmation might affect transaction validity"><span class="no"></span></a></td>
+                  </tr>
+                  <tr>
+                    <th><div>Other non asset related features</div></th>
+                    <td><span class="no"></span></td>
+                    <td><a href="#" class="tooltip-info" title="Betting, CFD, Rock-Paper-Scissors"><span class="yes"></span></a></td>
+                    <td><a href="#" class="tooltip-info" title="Reversible transactions"><span class="yes"></span></a></td>
+                  </tr>
 
-                      <li class="group_header"><span><strong>Web Wallet</strong></span></li>
-                      <li class="row_style_2"><span>Name</span></li>
-                      <li class="row_style_2"><span>Send asset</span></li>
-                      <li class="row_style_2"><span>Issue asset</span></li>
-                      <li class="row_style_2"><span>Full modern browser support</span></li>
-                      <li class="row_style_2"><span>Full mobile support</span></li>
-                      <li class="row_style_2"><span>2-Factor-Authentication</span></li>
-                      <li class="row_style_2"><span>Email Customer Support</span></li>
-                      <li class="row_style_2"><span>Cold Storage</span></li>
-                      <li class="row_style_2"><span>BIP 32</span></li>
-                      <li class="row_style_2"><span>Internationalization</span></li>
-                      <li class="row_style_2"><span>Send to multisig address</span></li>
+                  <tr class="group">
+                    <th colspan="4"><div>Web Wallet</div></th>
+                  </tr>
+                  <tr>
+                    <th><div>Name</div></th>
+                    <td><a href="htttps://www.coinprism.com/">Coinprism</a></td>
+                    <td><a href="https://counterwallet.io/">Counterwallet</a></td>
+                    <td><a href="https://www.omniwallet.org/">Omniwallet</a></td>
+                  </tr>
+                  <tr>
+                    <th><div>Send asset</div></th>
+                    <td><span class="yes"></span></td>
+                    <td><span class="yes"></span></td>
+                    <td><span class="yes"></span></td>
+                  </tr>
+                  <tr>
+                    <th><div>Issue asset</div></th>
+                    <td><span class="yes"></span></td>
+                    <td><span class="yes"></span></td>
+                    <td><span class="yes"></span></td>
+                  </tr>
+                  <tr>
+                    <th><div>Full modern browser support</div></th>
+                    <td><span class="yes"></span></td>
+                    <td><a href="#" class="tooltip-info" title="Internet Explorer 10+ is not supported"><span class="no"></span></a></td>
+                    <td><a href="#" class="tooltip-info" title="Chrome only"><span class="no"></span></a></td>
+                  </tr>
+                  <tr>
+                    <th><div>Full mobile support</div></th>
+                    <td><span class="yes"></span></td>
+                    <td><a href="#" class="tooltip-info" title="Windows Phone is not supported"><span class="no"></span></a></td>
+                    <td><a href="#" class="tooltip-info" title="Chrome only"><span class="no"></span></a></td>
+                  </tr>
+                  <tr>
+                    <th><div>2-Factor-Authentication</div></th>
+                    <td><span class="yes"></span></td>
+                    <td><span class="no"></span></td>
+                    <td><span class="no"></span></td>
+                  </tr>
+                  <tr>
+                    <th><div>Email Customer Support</div></th>
+                    <td><span class="yes"></span></td>
+                    <td><span class="yes"></span></td>
+                    <td><span class="yes"></span></td>
+                  </tr>
+                  <tr>
+                    <th><div>Cold Storage</div></th>
+                    <td><span class="yes"></span></td>
+                    <td><span class="yes"></span></td>
+                    <td><span class="yes"></span></td>
+                  </tr>
+                  <tr>
+                    <th><div>BIP 32</div></th>
+                    <td><span class="no"></span></td>
+                    <td><span class="yes"></span></td>
+                    <td><span class="no"></span></td>
+                  </tr>
+                  <tr>
+                    <th><div>Internationalization</div></th>
+                    <td><span class="no"></span></td>
+                    <td><span class="yes"></span></td>
+                    <td><span class="no"></span></td>
+                  </tr>
+                  <tr>
+                    <th><div>Send to multisig address</div></th>
+                    <td><span class="yes"></span></td>
+                    <td><span class="no"></span></td>
+                    <td><span class="yes"></span></td>
+                  </tr>
 
-                      <li class="group_header"><span><strong>Mobile Wallet</strong></span></li>
-                      <li class="row_style_2"><span>Native Android Wallet</span></li>
-                      <li class="row_style_2"><span>Other platforms</span></li>
+                  <tr class="group">
+                    <th colspan="4"><div>Mobile Wallet</div></th>
+                  </tr>
+                  <tr>
+                    <th><div>Native Android Wallet</div></th>
+                    <td><a href="https://play.google.com/store/apps/details?id=com.coinprism.wallet"><span class="yes"></span></a></td>
+                    <td><span class="no"></span></td>
+                    <td><span class="no"></span></td>
+                  </tr>
+                  <tr>
+                    <th><div>Other platforms</div></th>
+                    <td><span class="no"></span></td>
+                    <td><span class="no"></span></td>
+                    <td><span class="no"></span></td>
+                  </tr>
 
-                      <li class="group_header"><span><strong>Client</strong></span></li>
-                      <li class="row_style_2"><span>Name</span></li>
-                      <li class="row_style_2"><span>Command line</span></li>
-                      <li class="row_style_2"><span>RPC API</span></li>
-                      <li class="row_style_2"><span>GUI</span></li>
-                    </ul>
-                  </div>
-                  <div class="column_1">
-                    <ul>
-                      <li class="header_row_1 align_center">
-                        <h2 class="col1">Coinprism</h2>
-                      </li>
-                      <li class="header_row_2 align_center">
-                        <a href="https://www.coinprism.com"><img src="coinprism.png" alt="Coinprism" /></a>
-                      </li>
-                      <li class="group_header"><span><strong></strong></span></li>
-                      <li class="row_style_1"><span><a href="https://github.com/OpenAssets/open-assets-protocol/blob/master/specification.mediawiki">Open Assets</a></span></li>
-                      <li class="row_style_1"><span>Colored coins</span></li>
-                      <li class="row_style_1"><span><a href="#" class="tooltip-info" title="Additional features are implemented as external apps">Modular</a></span></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-                      <li class="row_style_1"><span><a href="https://github.com/OpenAssets/open-assets-protocol/blob/master/specification.mediawiki">6 pages</a></span></li>
-                      <li class="row_style_1"><span>Final</span></li>
-                      <li class="row_style_1"><span><a href="https://github.com/OpenAssets/openassets">Openassets python module</a></span></li>
-                      <li class="row_style_1"><span>99%</span></li>
-                      <li class="row_style_1"><span>529</span></li>
-                      <li class="row_style_1"><span><a href="#" class="tooltip-info" title="Colorcore, NBitcoin and Assembly.com">3</a></span></li>
-                      <li class="row_style_1"><a href="#" class="tooltip-info" title="Uses OP_RETURN as protocol is compact"><span class="pricing_yes"></span></a></li>
-                      <li class="row_style_1"><a href="#" class="tooltip-info" title="Uses a different address format for sending assets"><span class="pricing_yes"></span></a></li>
-
-                      <li class="group_header"><span><strong></strong></span></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-                      <li class="row_style_1"><span>Any from 0 to 18 places</span></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-                      <li class="row_style_1"><a href="#" class="tooltip-info" title="Asset names do not have to be unique, but can be verified"><span class="pricing_yes"></span></a></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-                      <li class="row_style_1"><span>Bitcoin fees</span></li>
-                      <li class="row_style_1"><span>Bitcoin fees</span></li>
-                      <li class="row_style_1"><a href="#" class="tooltip-info" title="Unlimited length"><span class="pricing_yes"></span></a></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-                      <li class="row_style_1"><a href="#" class="tooltip-info" title="Via destruction of private key"><span class="pricing_yes"></span></a></li>
-                      <li class="row_style_1"><a href="#" class="tooltip-info" title="Via dividends and asset repudiation"><span class="pricing_yes"></span></a></li>
-                      <li class="row_style_1"><a href="#" class="tooltip-info" title="Supports multiple implementations"><span class="pricing_yes"></span></a></li>
-                      <li class="row_style_1"><span class="pricing_no"></span></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-                      <li class="row_style_1"><span class="pricing_no"></span></li>
-
-                      <li class="group_header"><span><strong></strong></span></li>
-                      <li class="row_style_1"><span><a href="htttps://www.coinprism.com/">Coinprism</a></span></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-                      <li class="row_style_1"><span class="pricing_no"></span></li>
-                      <li class="row_style_1"><span class="pricing_no"></span></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-
-                      <li class="group_header"><span><strong></strong></span></li>
-                      <li class="row_style_1"><a href="https://play.google.com/store/apps/details?id=com.coinprism.wallet"><span class="pricing_yes"></span></a></li>
-                      <li class="row_style_1"><span class="pricing_no"></span></li>
-
-                      <li class="group_header"><span></span></li>
-                      <li class="row_style_1"><span><a href="https://github.com/OpenAssets/colorcore">Colorcore</a></span></li>
-                      <li class="row_style_1"><span><span class="pricing_yes"></span></span></li>
-                      <li class="row_style_1"><span><span class="pricing_yes"></span></span></li>
-                      <li class="row_style_1"><span><span class="pricing_no"></span></span></li>
-                    </ul>
-                  </div>
-                  <div class="column_2">
-                    <ul>
-                      <li class="header_row_1 align_center">
-                        <h2 class="col2">Counterparty</h2>
-                      </li>
-                      <li class="header_row_2 align_center">
-                        <a href="http://counterparty.io/"><img src="counterparty.png" alt="Counterparty" /></a>
-                      </li>
-                      <li class="group_header"><span><strong></strong></span></li>
-                      <li class="row_style_2"><span><a href="https://github.com/CounterpartyXCP/counterpartyd">Counterparty Protocol</a></span></li>
-                      <li class="row_style_2"><span>Global state consensus</span></li>
-                      <li class="row_style_2"><span><a href="#" class="tooltip-info" title="Additional features require modification of the protocol">Monolithic</a></span></li>
-                      <li class="row_style_2"><span class="pricing_yes"></span></li>
-                      <li class="row_style_2"><a href="#" class="tooltip-info" title="Relies on the XCP currency for some features"><span class="pricing_no"></span></a></li>
-                      <li class="row_style_2"><span class="pricing_yes"></span></li>
-                      <li class="row_style_2"><span class="pricing_no"></span></li>
-                      <li class="row_style_2"><span>Does not exist</span></li>
-                      <li class="row_style_2"><span>Subject to regular changes</span></li>
-                      <li class="row_style_2"><span><a href="https://github.com/CounterpartyXCP/counterpartyd">Counterpartyd</a></span></li>
-                      <li class="row_style_2"><span>54%</span></li>
-                      <li class="row_style_2"><span>8,744</span></li>
-                      <li class="row_style_2"><span>1</span></li>
-                      <li class="row_style_2"><a href="#" class="tooltip-info" title="Uses bare multisig outputs"><span class="pricing_no"></span></a></li>
-                      <li class="row_style_2"><a href="#" class="tooltip-info" title="Assets can be sent to Coinbase, Bitstamp, or any exchange, resulting in the loss of the assets"><span class="pricing_no"></span></a></li>
-
-                      <li class="group_header"><span><strong></strong></span></li>
-                      <li class="row_style_2"><span class="pricing_no"></span></li>
-                      <li class="row_style_2"><span class="pricing_no"></span></li>
-                      <li class="row_style_2"><span class="pricing_no"></span></li>
-                      <li class="row_style_2"><span class="pricing_no"></span></li>
-                      <li class="row_style_2"><span>Either 0 or 8 places</span></li>
-                      <li class="row_style_2"><span><a href="#" class="tooltip-info" title="Transactions may be lost as a result of a Blockchain reorganization"><span class="pricing_no"></span></a></span></li>
-                      <li class="row_style_2"><span class="pricing_no"></span></li>
-                      <li class="row_style_2"><span class="pricing_no"></span></li>
-                      <li class="row_style_2"><span>Bitcoin fees + 0.5 XCP</span></li>
-                      <li class="row_style_2"><span>Bitcoin fees</span></li>
-                      <li class="row_style_2"><span class="pricing_no"></span></li>
-                      <li class="row_style_2"><span class="pricing_no"></span></li>
-                      <li class="row_style_2"><span class="pricing_yes"></span></li>
-                      <li class="row_style_2"><span class="pricing_yes"></span></li>
-                      <li class="row_style_2"><span class="pricing_yes"></span></li>
-                      <li class="row_style_2"><span class="pricing_yes"></span></li>
-                      <li class="row_style_2"><span class="pricing_yes"></span></li>
-                      <li class="row_style_2"><a href="#" class="tooltip-info" title="Placing orders requires paying a transaction fee and waiting 10 minutes confirmation time"><span class="pricing_yes"></span></a></li>
-                      <li class="row_style_2"><span class="pricing_no"></span></li>
-                      <li class="row_style_2"><span class="pricing_no"></span></li>
-                      <li class="row_style_2"><a href="#" class="tooltip-info" title="The order of confirmation might affect transaction validity"><span class="pricing_no"></span></a></li>
-                      <li class="row_style_2"><a href="#" class="tooltip-info" title="Betting, CFD, Rock-Paper-Scissors"><span class="pricing_yes"></span></a></li>
-
-                      <li class="group_header"><span><strong></strong></span></li>
-                      <li class="row_style_2"><span><a href="https://counterwallet.io/">Counterwallet</a></span></li>
-                      <li class="row_style_2"><span class="pricing_yes"></span></li>
-                      <li class="row_style_2"><span class="pricing_yes"></span></li>
-                      <li class="row_style_2"><a href="#" class="tooltip-info" title="Internet Explorer 10+ is not supported"><span class="pricing_no"></span></a></li>
-                      <li class="row_style_2"><a href="#" class="tooltip-info" title="Windows Phone is not supported"><span class="pricing_no"></span></a></li>
-                      <li class="row_style_2"><span class="pricing_no"></span></li>
-                      <li class="row_style_2"><span class="pricing_yes"></span></li>
-                      <li class="row_style_2"><span class="pricing_yes"></span></li>
-                      <li class="row_style_2"><span class="pricing_yes"></span></li>
-                      <li class="row_style_2"><span class="pricing_yes"></span></li>
-                      <li class="row_style_2"><span class="pricing_no"></span></li>
-
-                      <li class="group_header"><span><strong></strong></span></li>
-                      <li class="row_style_2"><span class="pricing_no"></span></li>
-                      <li class="row_style_2"><span class="pricing_no"></span></li>
-
-                      <li class="group_header"><span></span></li>
-                      <li class="row_style_2"><span><a href="https://github.com/CounterpartyXCP/counterpartyd">Counterpartyd</a></span></li>
-                      <li class="row_style_2"><span><span class="pricing_yes"></span></span></li>
-                      <li class="row_style_2"><span><span class="pricing_yes"></span></span></li>
-                      <li class="row_style_2"><span><span class="pricing_no"></span></span></li>
-                    </ul>
-                  </div>
-                  <div class="column_3">
-                    <ul>
-                      <li class="header_row_1 align_center">
-                        <h2 class="col3">Mastercoin</h2>
-                      </li>
-                      <li class="header_row_2 align_center">
-                        <a href="http://www.mastercoin.org/"><img src="mastercoin.png" alt="Mastercoin" /></a>
-                      </li>
-                      <li class="group_header"><span><strong></strong></span></li>
-                      <li class="row_style_1"><span><a href="https://github.com/mastercoin-MSC/spec">Master Protocol</a></span></li>
-                      <li class="row_style_1"><span>Global state consensus</span></li>
-                      <li class="row_style_1"><span><a href="#" class="tooltip-info" title="Additional features require modification of the protocol">Monolithic</a></span></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-                      <li class="row_style_1"><a href="#" class="tooltip-info" title="Relies on the MSC currency for some features"><span class="pricing_no"></span></a></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-                      <li class="row_style_1"><span><a href="https://github.com/mastercoin-MSC/spec">45 pages</a></span></li>
-                      <li class="row_style_1"><span>Subject to regular changes</span></li>
-                      <li class="row_style_1"><span><a href="https://github.com/mastercoin-MSC/mastercore">mastercore</a> (beta)</span></li>
-                      <li class="row_style_1"><span>n/a</span></li>
-                      <li class="row_style_1"><span>Unknown (fork of Bitcoind)</span></li>
-                      <li class="row_style_1"><span>1</span></li>
-                      <li class="row_style_1"><a href="#" class="tooltip-info" title="Uses bare multisig outputs"><span class="pricing_no"></span></a></li>
-                      <li class="row_style_1"><a href="#" class="tooltip-info" title="Assets can be sent to Coinbase, Bitstamp, or any exchange, resulting in the loss of the assets"><span class="pricing_no"></span></a></li>
-
-                      <li class="group_header"><span><strong></strong></span></li>
-                      <li class="row_style_1"><span class="pricing_no"></span></li>
-                      <li class="row_style_1"><span class="pricing_no"></span></li>
-                      <li class="row_style_1"><span class="pricing_no"></span></li>
-                      <li class="row_style_1"><span class="pricing_no"></span></li>
-                      <li class="row_style_1"><span>Either 0 or 8 places</span></li>
-                      <li class="row_style_1"><a href="#" class="tooltip-info" title="Transactions may be lost as a result of a Blockchain reorganization"><span class="pricing_no"></span></a></li>
-                      <li class="row_style_1"><span class="pricing_no"></span></li>
-                      <li class="row_style_1"><span class="pricing_no"></span></li>
-                      <li class="row_style_1"><span>Bitcoin fees</span></li>
-                      <li class="row_style_1"><span>Bitcoin fees</span></li>
-                      <li class="row_style_1"><span class="pricing_no"></span></li>
-                      <li class="row_style_1"><span class="pricing_no"></span></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-                      <li class="row_style_1"><span class="pricing_no"></span></li>
-                      <li class="row_style_1"><a href="#" class="tooltip-info" title="Via destruction of private key"><span class="pricing_yes"></span></a></li>
-                      <li class="row_style_1"><span class="pricing_no"></span></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-                      <li class="row_style_1"><a href="#" class="tooltip-info" title="Asset to asset exchange not supported"><span class="pricing_yes"></span></a></li>
-                      <li class="row_style_1"><span class="pricing_no"></span></li>
-                      <li class="row_style_1"><span class="pricing_no"></span></li>
-                      <li class="row_style_1"><a href="#" class="tooltip-info" title="The order of confirmation might affect transaction validity"><span class="pricing_no"></span></a></li>
-                      <li class="row_style_1"><a href="#" class="tooltip-info" title="Reversible transactions"><span class="pricing_yes"></span></a></li>
-
-                      <li class="group_header"><span><strong></strong></span></li>
-                      <li class="row_style_1"><span><a href="https://www.omniwallet.org/">Omniwallet</a></span></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-                      <li class="row_style_1"><a href="#" class="tooltip-info" title="Chrome only"><span class="pricing_no"></span></a></li>
-                      <li class="row_style_1"><a href="#" class="tooltip-info" title="Chrome only"><span class="pricing_no"></span></a></li>
-                      <li class="row_style_1"><span class="pricing_no"></span></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-                      <li class="row_style_1"><span class="pricing_no"></span></li>
-                      <li class="row_style_1"><span class="pricing_no"></span></li>
-                      <li class="row_style_1"><span class="pricing_yes"></span></li>
-
-                      <li class="group_header"><span><strong></strong></span></li>
-                      <li class="row_style_1"><span class="pricing_no"></span></li>
-                      <li class="row_style_1"><span class="pricing_no"></span></li>
-
-                      <li class="group_header"><span></span></li>
-                      <li class="row_style_1"><span><a href="https://github.com/mastercoin-MSC/mastercore">Mastercore</a></span></li>
-                      <li class="row_style_1"><span><span class="pricing_yes"></span></span></li>
-                      <li class="row_style_1"><span><span class="pricing_yes"></span></span></li>
-                      <li class="row_style_1"><span><span class="pricing_yes"></span></span></li>
-                    </ul>
-                  </div>
-                </div>
-                <!-- DC Pricing Tables:3 End -->
-                <div class="tsc_clear"></div> <!-- line break/clear line -->
+                  <tr class="group">
+                    <th colspan="4"><div>Client</div></th>
+                  </tr>
+                  <tr>
+                    <th><div>Name</div></th>
+                    <td><a href="https://github.com/OpenAssets/colorcore">Colorcore</a></td>
+                    <td><a href="https://github.com/CounterpartyXCP/counterpartyd">Counterpartyd</a></td>
+                    <td><a href="https://github.com/mastercoin-MSC/mastercore">Mastercore</a></td>
+                  </tr>
+                  <tr>
+                    <th><div>Command line</div></th>
+                    <td><span class="yes"></span></td>
+                    <td><span class="yes"></span></td>
+                    <td><span class="yes"></span></td>
+                  </tr>
+                  <tr>
+                    <th><div>RPC API</div></th>
+                    <td><span class="yes"></span></td>
+                    <td><span class="yes"></span></td>
+                    <td><span class="yes"></span></td>
+                  </tr>
+                  <tr>
+                    <th><div>GUI</div></th>
+                    <td><span class="no"></span></td>
+                    <td><span class="no"></span></td>
+                    <td><span class="yes"></span></td>
+                  </tr>
+                </table>
 
 
               </div>
