@@ -23,7 +23,7 @@
 }
 
 .comparison-table .top-header td img {
-    height: 100px;
+    width: 100%;
 }
 
 .comparison-table .top-header h2 {
@@ -42,9 +42,11 @@
     width: 23%;
 }
 
-.comparison-table tr th div {
-    min-height: 40px;
+.comparison-table tr th,
+.comparison-table tr td {
     padding: 10px 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .comparison-table tr td {
