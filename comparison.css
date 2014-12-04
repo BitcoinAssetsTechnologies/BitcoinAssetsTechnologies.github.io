@@ -1,3 +1,9 @@
+.navbar-brand img {
+    height: 64px;
+    position: relative;
+    top: -20px;
+}
+
 /* Comparison Table */
 
 .comparison-table {
