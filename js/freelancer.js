@@ -47,4 +47,18 @@ $(document).ready(function () {
             e.preventDefault();
         }
     });
+
+    if (inIframe()) {
+        $("nav").addClass("hide");
+        $("header").addClass("hide");
+        $("footer").addClass("hide");
+    }
 })
+
+function inIframe() {
+    try {
+        return window.self !== window.top;
+    } catch (e) {
+        return true;
+    }
+}
